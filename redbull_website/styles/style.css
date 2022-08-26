@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    --main-color: #ebebfb;
+    --black--color: #fefefe;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size:  62.5;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 3.5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.heading{
+    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 120%;
+    right: 0%;
+    background-color: rgb(255, 47, 15);
+    width: 17rem;
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 25px 2px rgba(37, 0, 187, 0.75);
+    transform: scaleY(0);
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form i{
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.header .search-form input{
+    width: 100%;
+}
+
+.logo img{
+    height: 7rem;
+}
+
+.header{
+    background-color: rgb(27, 27, 165);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin:  2rem 7%;
+    border-radius: 30rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar.active{
+right: 3rem;
+}
+
+.header .navbar a{
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--black--color);
+    border-radius: 0.1rem solid transparent;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-left: 1.3rem;
+    background-color: transparent;
+}
+
+.header .cart-item-container{
+    position: absolute;
+    top: 95%;
+    height: calc(100vh-9rem);
+    width: 35rem;
+    background-color: white;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+}
+
+
+
+.home{
+    min-height: 100vh;
+    background: url(../images/yeniarkaplan.png)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -11.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size:  5.1rem;
+    color: white;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: rgb(255, 47, 15);
+    border-radius: 3rem;
+    background-color: rgb(255, 47, 15);
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu .box-container .box .menu-category{
+    font-size: 1.5rem;
+}
+
+.menu .box-container .box h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
